@@ -1,6 +1,37 @@
+
 :root {
-    
+    /* grandezze */
+    --text-l:40px;
+    --text-m:30px;
+    /* colore */
+    --black: var(--black);
 }
 
+.text-l {
+    font-size: var(--text-l);
+}
+.text-m {
+    font-size: var(--text-m);
+}
+.bg-black {
+    background-color: var(--black);
+}
 
+.pd-t-33 {
+    padding-top: 33px;
+}
+.pd-t-25 {
+    padding-top: 25px;
+}
 
+.pd-t-17 {
+    padding-top: 17px;
+}
+
+.m-l-40 {
+    margin-left: 40px;
+}
+
+.t-a {
+    text-align: center;   
+}
