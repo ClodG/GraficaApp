@@ -4,7 +4,9 @@
     --text-l:40px;
     --text-m:30px;
     /* colore */
-    --black: var(--black);
+    --light-grey: #F5F5F5;
+    --black: #4C5D55;
+    --red: #FD6B67;
 }
 
 .text-l {
@@ -17,16 +19,6 @@
     background-color: var(--black);
 }
 
-.pd-t-33 {
-    padding-top: 33px;
-}
-.pd-t-25 {
-    padding-top: 25px;
-}
-
-.pd-t-17 {
-    padding-top: 17px;
-}
 
 .m-l-40 {
     margin-left: 40px;
@@ -34,4 +26,24 @@
 
 .t-a {
     text-align: center;   
+}
+
+.circle-sm {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.icon-hover:hover {
+    color: var(--light-grey);  
+    background-color: var(--black);
+}
+
+.icon-hover {
+    transition: all 0.3s linear;
+    color: var(--black);
+    background-color: var(--light-grey);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
 }
