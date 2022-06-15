@@ -2,3 +2,5 @@ git add. aggiunge tutto
 git commit -m "messaggio" invio modifiche con messaggio
 git push -u origin grafica nuovo ramo
 git checkout -b nomeBranch cambio brench 
+git fetch allineare e recuperare i file che servono
+git pull 
