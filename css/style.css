@@ -6,3 +6,31 @@ padding: 0;
 header {
     height: 100px;
 }
+
+main {
+    width: 100%;
+}
+
+main .card-group > .card {
+    width: 300px;
+    flex: none !important;
+    border-left: 1px solid lightgray!important;
+    box-shadow: 3px 3px 3px grey;
+    transition: all 0.3s ease-in;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    border-radius: 20px!important;
+}
+main .card-group > .card:hover {
+    box-shadow: 5px 5px 5px grey;
+    /* cursor: pointer; */
+}
+
+main .card-group > .card:hover h5 {
+    color: red ;
+}
+
+/* main .card-group > .card h5 {
+    text-align: center;
+} */
