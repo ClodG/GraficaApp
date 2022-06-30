@@ -13,18 +13,37 @@
 
 </head>
 <body>
-    <div class="form mybg-black h-100vh d-flex">
-        <div class="m-auto d-flex flex-column-reverse position-relative mybg-black">
-            <input type="text" placeholder="inserire qui il testo" name="titoloVideo" id="titoloVideo" class="circleText width-100 mybg-black pr-5" style="font-size:30px; color: black;">
-            <label for="titoloVideo" style="color: black; top:0; left:20px; transform: translateY(-50%); background-color: inherit;" class="position-absolute px-3">Titolo video</label>
-            <div class="position-absolute tooltip"style="right:10px; top: 50%; transform: translateY(-50%);">
-                <i class="fa-solid fa-circle-exclamation"  style="font-size: x-large; color: rgb(126, 11, 11);">
-                </i>
-                <!-- <span class="tooltiptext ">info per prova</span> -->
+    <div class="form bg-white h-100vh d-flex">
+        <div class="m-auto d-flex flex-column-reverse position-relative bg-white justify-content-end" style="height: 100px ;">
+            <div class="position-relative">
+                <input type="text" placeholder="inserire qui il testo" name="titoloVideo" id="titoloVideo" class="circleText width-100 bg-white border">
+                <label for="titoloVideo" class="position-absolute px-3">Titolo video</label>
+                <div class="position-absolute d-flex op-1"style="right:10px; top: 50%; transform: translateY(-50%);" label="input text" >
+                    <div class="position-absolute " style="right: -20px; top:0;  transform:translateX(100%);">
+                        <small style="line-height: 10px;display: inline-block;">questo è un esempio</small>
+                    </div>
+                    <i class="fa-solid fa-circle-exclamation"  style="font-size: x-large; color: rgb(28, 26, 26);margin:auto;">
+                    </i>
+                    <!-- <span class="tooltiptext ">info per prova</span> -->
+                </div>
+            </div>
+        </div>
+        <div class="m-auto d-flex flex-column position-relative bg-white" style="height: 100px;">
+            
+            <div class="position-relative">
+                <label for="titoloVideo" class="position-absolute px-3 errorTitle">Titolo video</label>
+                <input type="text" placeholder="inserire qui il testo" name="titoloVideo" id="titoloVideo" class="circleText width-100 bg-white errorBorder">
+                <div class="position-absolute d-flex align-items-center op-1"style="right:10px; top: 50%; transform: translateY(-50%);" label="input text" >
+                    <i class="fa-solid fa-circle-exclamation errorTitle"  style="font-size: x-large;">
+                    </i>  
+                </div>
+            </div>
+            <div>
+                <small style="line-height: 10px;display: inline-block;">errore</small>
             </div>
             
         </div>
+        
     </div>
-    
 </body>
 </html>
