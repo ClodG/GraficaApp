@@ -93,10 +93,9 @@
 input {
     font-size: 30px;
     color: var(--black);
-  
     padding: 8px 40px 8px 8px;
 }
-input::placeholder {
+input::placeholder, textarea::placeholder {
     color: var(--black);
 }
 
@@ -106,6 +105,8 @@ label {
     left:20px; 
     transform: translateY(-50%); 
     background-color: white;
+    height: 24px;
+    font-size: 20px;
 
 }
 
