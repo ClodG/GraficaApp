@@ -7,16 +7,20 @@
     <title>inputText</title>
     <link rel="stylesheet" href="./css/general.css">
     <link rel="stylesheet" href="./css/input.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/color.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
+    <!-- inizio inputText -->
     <div class="form bg-white h-100vh d-flex">
+        <!-- input text normal -->
         <div class="m-auto d-flex flex-column-reverse position-relative bg-white justify-content-end" style="height: 100px ;">
             <div class="position-relative">
-                <input type="text" placeholder="inserire qui il testo" name="titoloVideo" id="titoloVideo" class="circleText width-100 bg-white border">
+                <input type="text" placeholder="inserire qui il testo" name="titoloVideo" id="titoloVideo" class="circleText width-100 bg-white border-0 outline-2 outline outline-black">
                 <label for="titoloVideo" class="position-absolute px-3">Titolo video</label>
                 <div class="position-absolute d-flex op-1"style="right:10px; top: 50%; transform: translateY(-50%);" label="input text" >
                     <div class="position-absolute " style="right: -20px; top:0;  transform:translateX(100%);">
@@ -28,29 +32,130 @@
                 </div>
             </div>
         </div>
+        <!-- input text error -->
         <div class="m-auto d-flex flex-column position-relative bg-white" style="height: 100px;">
             
             <div class="position-relative">
                 <label for="titoloVideo" class="position-absolute px-3 errorTitle">Titolo video</label>
-                <input type="text" placeholder="inserire qui il testo" name="titoloVideo" id="titoloVideo" class="circleText width-100 bg-white errorBorder">
+                <input type="text" placeholder="inserire qui il testo" name="titoloVideo" id="titoloVideo" class="circleText width-100 bg-white border-0 outline-2 outline outline-red-700">
                 <div class="position-absolute d-flex align-items-center op-1"style="right:10px; top: 50%; transform: translateY(-50%);" label="input text" >
                     <i class="fa-solid fa-circle-exclamation errorTitle"  style="font-size: x-large;">
                     </i>  
                 </div>
             </div>
             <div>
-                <small style="line-height: 10px;display: inline-block;" class="errorTitle">errore</small>
+                <small class="errorTitle">errore</small>
             </div>
+
+            <!-- style="line-height: 10px;display: inline-block;" -->
             
         </div>
+    
+    
         
     </div>
-    <div class="d-flex justify-content-center">
-        <div class="d-flex justify-content-center           position-relative">
-            <textarea class="pt-2 px-4 circleText border"name="" id="textarea"  rows="10" placeholder="testo di prova" maxlength="40"></textarea>
-            <label class="position-absolute bg-white pb-2 px-4" for="textarea">label</label>
+    <!-- inizio select -->
+    <div class="d-flex" style="justify-content: space-around; margin:30px 0px;">
+        <div class="m-auto d-flex flex-column-reverse position-relative bg-white justify-content-end" style="height: 100px;">
+            <div class="position-relative">
+                <select class="border-0 outline outline-2 outline-black circleText pt-1 px-2" name="" id="titoloSelect">
+                    <option value="">-- scegli una opzione --</option>
+                    <optgroup label="Elenco">
+                        <option value="">Primo</option>
+                        <option value="">Secondo</option>
+                    </optgroup>                  
+                    <option value="">Terzo</option>
+                    <option value="">Quarto</option>
+        
+        
+                </select>
+                <label for="titoloSelect" class="position-absolute px-3" >Select</label>
+                <!-- <div class="position-absolute d-flex op-1"style="right:10px; top: 50%; transform: translateY(-50%);" label="input text" >
+                    <div class="position-absolute " style="right: -20px; top:0;  transform:translateX(100%);">
+                        <small style="line-height: 10px;display: inline-block;">questo è un esempio</small>
+                    </div>
+                    <i class="fa-solid fa-circle-exclamation"  style="font-size: x-large; color: rgb(28, 26, 26);margin:auto;">
+                    </i>
+                     <span class="tooltiptext ">info per prova</span>
+                    </div> -->
+            </div>
+        </div>
+        <div class="m-auto d-flex flex-column-reverse position-relative bg-white justify-content-end" style="height: 100px ;">
+            <div class="position-relative">
+                <select class=" border-0 outline outline-2 outline-red-700 circleText pt-1 px-2" name="" id="titoloSelect">
+                    <option value="">-- scegli una opzione --</option>
+                    <optgroup label="Elenco">
+                        <option value="">Primo</option>
+                        <option value="">Secondo</option>
+                    </optgroup>                  
+                    <option value="">Terzo</option>
+                    <option value="">Quarto</option>
+        
+        
+                </select>
+                <label for="titoloSelect" class="position-absolute px-3 errorTitle">Select</label>
+                <div class="position-absolute d-flex op-1"style="right:-20px; top: 50%; transform: translateY(-50%);" label="input text" >
+                    <div class="position-absolute " style="right: -20px; top:0;  transform:translateX(100%);">
+                        <small style="line-height: 10px;display: inline-block; color:rgb(92, 10, 10)">questo è un esempio</small>
+                    </div>
+                    <i class="fa-solid fa-circle-exclamation"  style="font-size: x-large; color: rgb(92, 10, 10);margin:auto; transform: translateX(50%);">
+                    </i>
+                    <!-- <span class="tooltiptext ">info per prova</span> -->
+                </div>
+            </div>
         </div>
     </div>
+
+    <div class="d-flex" style="justify-content: space-around; margin:30px 0px;">
+        <div class="m-auto d-flex flex-column-reverse position-relative bg-white justify-content-end" style="height: 100px;">
+            <div class="position-relative">
+                <input type="checkbox" name="" id="checkbox" >
+                <label for="checkbox" class="position-absolute px-3 checkbox" >Select</label>
+                <!-- <div class="position-absolute d-flex op-1"style="right:10px; top: 50%; transform: translateY(-50%);" label="input text" >
+                    <div class="position-absolute " style="right: -20px; top:0;  transform:translateX(100%);">
+                        <small style="line-height: 10px;display: inline-block;">questo è un esempio</small>
+                    </div>
+                    <i class="fa-solid fa-circle-exclamation"  style="font-size: x-large; color: rgb(28, 26, 26);margin:auto;">
+                    </i>
+                     <span class="tooltiptext ">info per prova</span>
+                    </div> -->
+            </div>
+        </div>
+        <div class="m-auto d-flex flex-column-reverse position-relative bg-white justify-content-end" style="height: 100px ;">
+            <div class="position-relative">
+                <input type="checkbox" id="checkbox1" checked>
+                <label for="checkbox1" class="position-absolute px-3 errorTitle checkbox">Select</label>
+                <div class="position-absolute d-flex op-1"style="right:-80px; top: 50%; transform: translateY(-50%);" label="input text" >
+                    <div class="position-absolute " style="right: -20px; top:0;  transform:translateX(100%);">
+                        <small style="line-height: 10px;display: inline-block; color:rgb(92, 10, 10)">questo è un esempio</small>
+                    </div>
+                    <i class="fa-solid fa-circle-exclamation"  style="font-size: x-large; color: rgb(92, 10, 10);margin:auto; transform: translateX(50%);">
+                    </i>
+                    <!-- <span class="tooltiptext ">info per prova</span> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- inizio textarea -->
+    <div class="d-flex" style="justify-content: space-around;">
+        <div class="d-flex justify-content-center          position-relative">
+            <textarea class="pt-2 px-4 circleText border-0 outline-2 outline outline-black"name="" id="textarea"  rows="10" placeholder="testo di prova" maxlength="40"></textarea>
+            <label class="position-absolute bg-white pb-2 px-4" for="textarea">label</label>
+        </div>
+        <div class="d-flex gap-2">
+            <div class="d-flex justify-content-center           position-relative">
+                <textarea class="pt-2 px-4 circleText border-0 outline-2 outline outline-red-700"name="" id="textarea"  rows="10" placeholder="testo di prova" maxlength="40"></textarea>
+                <label class="position-absolute bg-white pb-2 px-4 errorTitle" for="textarea">label</label>
+            </div>
+            <div>
+                <small class="errorTitle">errore</small>
+            </div>
+        </div>
+    </div>
+    
+    
+
 
 </body>
 </html>

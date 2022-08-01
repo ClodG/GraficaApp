@@ -3,6 +3,54 @@ margin: 0;
 padding: 0;
 }
 
+:root {
+    --size-70: 70px;
+    --size-8: 8px;
+    --size-40: 40px;
+    --size-30:30px;
+    --perc-50: 50%;
+    --perc--50: -50%;
+    
+    
+}
+
+.b-radius-50 {
+    border-radius: var(--perc-50);
+}
+
+.transition-all {
+    transition-property: all;
+}
+
+.duration-300 {
+    transition-duration: 0.3s;
+}
+
+.transition-linear {
+    transition-timing-function: linear;
+}
+
+label:not(.checkbox) {
+    top:0; 
+    left:20px; 
+    transform: translateY(var(--perc--50)); 
+    height: 24px;
+    font-size: 20px;
+    margin-top: -5px;
+}
+
+
+input {
+    font-size: var(--size-30);
+}
+
+.w-70px {
+    width: var(--size-70);
+}
+.h-70px {
+    height: var(--size-70);
+}
+
 header {
     height: 100px;
 }
@@ -31,6 +79,3 @@ main .card-group > .card:hover h5 {
     color: red ;
 }
 
-/* main .card-group > .card h5 {
-    text-align: center;
-} */

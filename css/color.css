@@ -1,0 +1,102 @@
+:root {
+    /* colore */
+    --grey-50: #F5F5F5;
+    --grey-600: #4C5D55;
+    --light-red: #FD6B67;
+    /* --dark-red: #940808; */
+    --red: #ff0000; 
+    --black: #000000;
+    --white: #ffffff;
+
+    --red-100: #e1c5c5;
+    --red-300: #cd6565;
+    --red-500: #cb3b3b;
+    --red-700: #5c0a0a;
+}
+
+.outline-red-100 {
+    outline-color: var(--red-100);
+}
+.outline-red-300 {
+    outline-color: var(--red-300);
+}
+.outline-red-500 {
+    outline-color: var(--red-500);
+}
+
+main .card-group > .card:hover h5 {
+    color: var(--red);    
+}
+
+.errorTitle {
+    color: var(--red-700);
+}
+
+
+
+.outline-red-700 {
+    outline-color: var(--red-700);
+}
+
+.outline-black {
+    outline-color: var(--black)
+}
+
+/* .border-none {
+    border-width: 0px;
+    outline-width: 2px;
+    outline-style: solid;
+    outline-color: var(--black);
+    
+} */
+
+
+.bg-grey-600{
+    background-color: var(--grey-600);
+}
+
+.bg-grey-50 {
+    background-color: var(--grey-50);
+}
+
+.text-grey-50 {
+    color: var(--grey-50);
+}
+
+.text-grey-600 {
+   color: var(--grey-600);
+}
+
+/* .icon-hover:hover {
+    color: var(--light-grey);  
+    background-color: var(--light-black);
+} */
+
+.bg-grey-50:hover {
+    background-color: var(--grey-600);
+}
+
+.text-grey-600:hover {
+    color: var(--grey-50);
+}
+.icon-hover {
+    /* transition: all 0.3s linear; */
+    /* color: var(--light-black); */
+    /* background-color: var(--light-grey); */
+    /* border-radius: 50%;
+    width: 70px;
+    height: 70px; */
+}
+
+input {
+    color: var(--grey-600);
+    padding: 8px 40px 8px 8px;
+}
+input::placeholder, textarea::placeholder {
+    color: var(--grey-600);
+}
+
+label {
+    color: var(--black); 
+    background-color: var(--white);
+}
